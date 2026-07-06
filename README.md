@@ -8,11 +8,11 @@ interstellar objects that were recorded but never recognized.
 
 ## The idea
 
-Only three interstellar objects have ever been confirmed — 1I/'Oumuamua (2017),
+Only three interstellar objects have ever been confirmed, 1I/'Oumuamua (2017),
 2I/Borisov (2019), and 3I/ATLAS (2025). All three turned out to have "precovery"
 detections sitting in archives before anyone noticed them: 3I/ATLAS shows up in
 TESS images almost two months before its discovery. Those searches were done
-after the orbits were known. Nobody has run the blind version — searching the
+after the orbits were known. Nobody has run the blind version, searching the
 2010–2024 archives for hyperbolic objects nobody ever flagged.
 
 The plan, in one paragraph: search the Minor Planet Center's Isolated Tracklet
@@ -46,8 +46,8 @@ Early days — currently in the learning/foundations phase:
 ## Tools
 
 Python (astropy, pandas, matplotlib so far), find_orb for orbit fitting,
-git for provenance. AI (Claude) is used as a tutor — explanations, debugging
-help, background — as is logged in the lab notebook; the code is written and
+git for provenance. AI (Claude) is used as a tutor, explanations, debugging
+help, background, as is logged in the lab notebook; the code is written and
 understood by me.
 
 ## License
