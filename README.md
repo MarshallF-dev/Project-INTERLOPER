@@ -30,7 +30,8 @@ Early days — currently in the learning/foundations phase:
 - [x] Parsed 3I/ATLAS's full astrometry from the MPC (8,433 observations,
       including the TESS precovery points — found those via a parsing bug,
       story in the lab notebook)
-- [ ] Reproduce 3I/ATLAS's orbit fit (target: recover e ≈ 6.14 myself)
+- [x] Reproduce 3I/ATLAS's orbit fit (target: recover e ≈ 6.14 myself)
+- [ ] Do the same for 1I and 2I
 - [ ] First look at the Isolated Tracklet File
 - [ ] Synthetic ISO injection engine
 - [ ] Hyperbolic linking pipeline
