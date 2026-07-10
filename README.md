@@ -31,7 +31,7 @@ Early days — currently in the learning/foundations phase:
       including the TESS precovery points — found those via a parsing bug,
       story in the lab notebook)
 - [x] Reproduce 3I/ATLAS's orbit fit (target: recover e ≈ 6.14 myself)
-- [ ] Do the same for 1I and 2I
+- [x] Do the same for 1I and 2I
 - [ ] First look at the Isolated Tracklet File
 - [ ] Synthetic ISO injection engine
 - [ ] Hyperbolic linking pipeline
