@@ -38,12 +38,18 @@ Early days — currently in the learning/foundations phase:
 
 ## What's where
 
-- `notebooks/` — analysis notebooks, numbered in order
-- `docs/notebook/` — my lab notebook, dated entries, kept as I work
-- `docs/` — literature notes, data source records, planning docs
-- `data/` — not tracked in github; sources and download instructions are
-  documented so everything can be re-fetched
-
+- `notebooks/` — analysis notebooks, numbered in order (01 = 3I parsing/plots, 02 = ...)
+- `docs/notebook/` — my lab notebook: dated entries kept as I work, plus
+  `attachments/` (hand calculations, screenshots, reference GIFs)
+- `docs/literature/` — one note file per paper, in my own words
+- `docs/ISO_comparison.md` — side-by-side table of my derived orbits for all
+  three known interstellar objects vs. JPL's values
+- `docs/` — data source records and planning docs
+- `data/` — not tracked in git; sources and download instructions are
+  documented in the lab notebook so everything can be re-fetched
+- `figures/` — generated plots, versioned (_v1, _v2...) rather than overwritten:
+  sky tracks for 1I/2I/3I with space-based observations highlighted
+  
 ## Tools
 
 Python (astropy, pandas, matplotlib so far), find_orb for orbit fitting,
