@@ -1,3 +1,5 @@
+## Literature readthrough notes/terms for "The Interstellar Interlopers," Jewitt, David; Seligman, Darryl Z..
+
 PDF Link: https://arxiv.org/pdf/2209.08182  
 
 Citation:
@@ -27,15 +29,131 @@ Astrophysics of Galaxies
 %Y DOI: 10.1146/annurev-astro-071221-054221
 %Y eprintid: arXiv:2209.08182
 
-Passthru 1 - 2026-07-07:
+Passthru 1 - 2026-07-12:
 Why I Care:
+This paper provides many valuable insights into celestial objects 1I and 2I. It also justifies my project.
 
 
-Numbers:
+Section Glossary:
+Background/Introduction: Talks about the potential quantity of ejected sub-kilometer comets in our galaxy, ~ 10^24 - 10^25. (Note this estimate is based off numbers that could be off by multiple orders of magnitude).
+
+Dynamical Properties: talks about the discovery, orbits, and non-gravitational acceleration of 1I and 2I
+
+Physical Properties: Tells about the physical properties of 1I and 2I, from Gas Production, Activity, Light Curves, Nucleus Sizes, and Colors.
+
+Physical Models: Tells about the "weirdness" of 1I, as it had significant non-gravitational acceleration, without a visible coma. NOT FULLY CORRECT, ADD MORE HERE.
+
+Statistics and origins: Talks about the Dynamics, galactic population, effects of the interstellar environment on, and capture of interstellar objects for 1I and 2I.
 
 
-Questions (Written for Me Before Passthru):
-How do the authors define an interstellar object — and where's the boundary case? (Watch for how they treat weakly hyperbolic comets; this is your e > 1 threshold question in embryo.)
+Table/Figure Glossary(in order of apperance):
+Figure 1: Shows the distribution of osculating orbital eccentricities for SPCs, LPCs, and ISOs. 
+
+Figure 2: An image of both 1I and 2I, 1I with a "point-like apperance," and 2I showing cometary activity.
+
+Table 1: Shows the dynamical properties of the interstellar interlopers, from the date of perihelion, barycentric pre-entry orbitial elements, and non-gravitational acceleration paramters.
+
+Figure 3: Shows the orbit/trajectory of 1I as altered around the sun.
+
+Figure 4: The trajectory of 2I.
+
+Figure 5: Show the non-gravitational acceleration and force of 1I and 2I compared to SPCs and LPCs.
+
+Table 2: Show the physical properties of 1I and 2I
+
+Figure 6: Shows the color distributions of various minor bodies in the solar system compared to those of 1I and 2I.
+
+Figure 7: Images and dust dynamics models of 2I over time, indicate a coma of small, slowly ejected particles.
+
+Figure 8: Coma suppressed images of 2I over time
+
+Figure 9: Lightcureve of 1I, from various observational facilities
+
+Figure 10: the distribution of asteroid lightcurve amplitudes and rotational periods for 1I, against all objects greater than and less than 1km in diameter.
+
+Table 3: Shows us the upper limits to gas production rates in 1I
+
+Figure 11: 2I proudiction rates over time, of various compounds
+
+Table 4: Production rates of CO, H2O, and OH measured for 2I
+
+Table 5: Production rates of Cn, C2, and C3 measured for 2I
+
+Figure 12: "Active sublimation surface fractions measured in solar system comets."
+
+Table 6: the observed rotational alterations of the nuclei of short-period comets.
+
+Figure 13: Timescales for spin-up measured in solar system comets
+
+Figure 14: Shows the phased (phase folded) lightcure data of 1I, showing small differences 3 rotations apart.
+
+Figure 15: the gravitational scattering for known exoplanets. (Safronov number)
+
+Figure 16: Showing the composition of 2I vs. 3 other comets.
+
+Figure 17: Observations of the edge of a protoplanetary disk
+
+Figure 18: Show the age kinematics for stars, 1I, and 2I.
+
+Figure 19: Explains observational constraints on the flux of 1I and 2I.
+
+Table 7: predicted detection rates of interstellar objects.
+
+
+Terms:
+Interstellar Interlopers: bodies formed outside the solar system, but observed passing through it.
+
+Interstellar Medium: The gas and radiation that fills space between solar systems in a galaxy.
+
+"Macroscopic" Interstellar Bodies: Interstellar bodies sized one meter or larger.
+
+Protoplanetary disks: A very dense, rotating disk of gas and dust orbiting a newly formed star
+
+Gravitational Scattering: The deflection of the trajectory of a celestial body when it "encounters" another massive celestial body.
+
+Velocity dispersion: A statistical measure of the spread of velocities around a mean velocity.
+
+Planetary Scattering: When the interactions between two or more planetary bodies become unstable, often resulting in a body being ejected into space, planets smashing into eachother, and/or surviving orbits being severely altered.
+
+H2O Snowline/freezout line/frost line: The distance from a usually young, "planet forming" star, where water can freeze (as of 2022, ours is close to the orbit of jupiter).
+
+SPCs: Short-period comets. Have "modest" eccentricties (less than 1).
+
+LPCs: Long-period comets. Have icotropically distributed inclinations, and large eccentricties (~1) and semimajor axes. Although the current source of them is the Oort cloud, the density at the relative location of the Oort cloud, so they likely formed in "the region now occuped by giant planets." continuing external perturbations on the Oort cloud continue to cause it to "dispense" LPCs, until they eventually enter the planetary zone.
+
+formed in-situ: Formed at its current location, withoug having undergone significant migration. Most SPCs were likely formed this way.
+
+Isotropic distribution: that something is distributed equally in all directions from a "center point."
+
+semimajor axes: one half of the major axis of an ellipse, often referring in local context to orbits. When relating to an orbit, essentially acts as an average distance from its star (if orbiting around a star).
+
+Gyr: An abbreviation for a gigayear, or one billion years.
+
+External Perturbations: Any outside force or change that affets the state or balance of a system.
+
+Barycenter: The center of mass of an entire system. In the context of "barycentric orbital elements," it just means that those elements were caluclated relative to the barycenter of the solar system.
+
+Empirical spin-changes: The observed rotational observatios of celestial objects.
+
+Safronov Number: A parameter used to measure gravitational focusing, determing what will happen to a plantesimal. 
+
+Age Kinematics: The correlation between the age of a celestial object or group of celestial objects and its movements.
+
+Flux: The rate at which energy flows through a given area over a specific amount of time
+
+
+3-sentance summary:
+1I is a very unique celestial object, with the surprising existance of non-gravitational acceleration without a coma. 2I is a surprisingly average comet, also with non-gravitational acceleration, but with a coma. There are an estimated 10^25-10^26 similar objects to 1I and 2I in the Milky Way alone, an estimate we got from the number density of similar objects (for ~100-m, 'Oumuamua-class bodies).
+
+
+Future Prospects Section: 
+IMPORTANT: The entire justification for my project, in their words: "It is possible that interstellar objects in the solar system have been recorded but went
+unnoticed in existing survey data. A systematic search for such objects in archival data would be a valuable first step towards improving our population estimates, even before the advent of powerful, new sky survey telescopes" (Jewitt & Seligman 2023, ARA&A, 61, 197).
+
+Add More During Level-2 Readthrough.
+
+
+for future passthroughs: How do the authors define an interstellar object — and where's the boundary case? (Watch for how they treat weakly hyperbolic comets; this is your e > 1 threshold question in embryo.)
 
 What are the two (at the time) known ISOs, and what was fundamentally different between them? (One looked inert, one was a textbook comet — why does that difference matter for what the population contains?)
 
@@ -47,11 +165,3 @@ What do they identify as the open problems or "what's needed next" in the conclu
 
 From the figures alone: which figure would you show a judge to explain why 'Oumuamua was strange? Which one explains where ISOs come from?
 
-Questions (Written During Passthru (answerable)):
-
-
-Questions (Written During Passthru (unanswerable/questionable)):
-
-
-Terms:
-Interstellar Interlopers: bodies formed outside the solar system, but observed passing through it.
