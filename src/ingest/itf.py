@@ -1,5 +1,7 @@
 """Parser for the MPC Isolated Tracklet File (for the 80-column astrometry format).""" #the file's docstring (self description)
 import pandas as pd #pandas, used to build the dataframe
+from collections import Counter #tally-dict, essentially removes init sequence
+import re #allows me to only build the validator pattern once
 
 def parse_line(line): #starts a function definition, takes one input, line
     """Takes one raw line of text. Then returns a dictionar (dict) of its fields, or  none if the line has been determine that it should be skipped.""" #this function's docstring
@@ -31,4 +33,25 @@ def parse_itf(path, max_lines=None): #creates my second function, takes in a fil
             else:
                 rows.append(rec)
                 stats["parsed"] += 1 #another part of the seperation
-            return pd.DataFrame(rows), stats #builds the table from the accumilated dicts of all the lines, and returns two things at once. 
+    return pd.DataFrame(rows), stats #builds the table from the accumilated dicts of all the lines, and returns two things at once. 
+
+def census_itf(path):
+    """Only goes through the file once, kept only the counters instead of the data itself."""
+    obs = Counter() #obscode = how many observations
+    years = Counter() #year = how many observations
+    sizes = Counter() #desig = how many observations
+    ra_ok = re.compile(r"^\d{2} \d{2} \d{2}") #pre-built validator
+    stats = {"parsed": 0, "skipped": 0, "bad_ra": 0}
+    with open(path) as f:
+        for line in f:
+            rec = parse_line(line.rstrip("/n")) #parses the line, after stripping it of spaces and removing invisible end character
+            if rec is None:
+                stats["skipped"] += 1
+                continue
+            stats["parsed"] += 1
+            obs[rec["obscode"]] += 1
+            years[rec["date_str"][:4]] += 1
+            sizes[rec["desig"]] += 1
+            if not ra_ok.match(rec["ra_str"]): #tests one string
+                stats["bad_ra"] += 1
+    return obs, years, sizes, stats

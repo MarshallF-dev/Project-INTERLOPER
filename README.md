@@ -32,7 +32,7 @@ Early days — currently in the learning/foundations phase:
       story in the lab notebook)
 - [x] Reproduce 3I/ATLAS's orbit fit (target: recover e ≈ 6.14 myself)
 - [x] Do the same for 1I and 2I
-- [ ] First look at the Isolated Tracklet File
+- [x] First look at the Isolated Tracklet File
 - [ ] Synthetic ISO injection engine
 - [ ] Hyperbolic linking pipeline
 
