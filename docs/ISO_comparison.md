@@ -13,6 +13,6 @@
 | Observations (my dataset) | 214 | 3,360 | 8,433 |
 | Observed arc | 2017-10-14 → 2018-01-02 (~80 days) | 2018-12-13 → 2020-09-30 (~22 months) | 2025-05-08 → 2026-04-14 (~11 months) |
 | Space-based observers | HST (30 obs) | NEOSSat/C53 (633!), WISE/C51, HST | 32 obs: TESS, Lucy, Psyche, TGO |
-| Prediscovery data | none | ZTF, ~8.5 months unnoticed | TESS, ~54 days unnoticed |
+| Prediscovery data | Pan-STARRS1, ~5 days unnoticed | ZTF, ~8.5 months unnoticed | TESS, ~54 days unnoticed |
 | Final observations by | Hubble | Hubble | ground (Apr 2026) |
 | Notable | non-gravitational acceleration; shortest arc | textbook active comet; retrograde loop visible in my sky track | most hyperbolic object ever recorded; observed from Mars orbit |
