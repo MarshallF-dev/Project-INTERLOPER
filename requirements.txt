@@ -3,3 +3,6 @@ pandas
 matplotlib
 jupyter
 ipykernel
+SkyCoord
+datetime
+pyarrow
