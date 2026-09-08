@@ -84,13 +84,14 @@ def _parse_date(s): #just as used before, will convert the time to real usable t
     day = int(day_frac)
     return datetime(int(y), int(m), day) + timedelta(days=day_frac - day)
 
-def to_numeric(df): #converts ra_deg and dec_deg into real degrees, also applies _parse_date to the time column
-    """Adds ra_deg, dec_deg, time columns to a fully parsed ITF table. returns df."""
+def to_numeric(df): #It converts ra_str and dec_str
+    """Adds ra_deg, dec_deg, time columns to a fully parsed ITF table. Returns a new df."""
+    out = df.copy()
     coords = SkyCoord(df["ra_str"], df["dec_str"], unit=(u.hourangle, u.deg))
-    df["ra_deg"] = coords.ra.deg
-    df["dec_deg"]  = coords.dec.deg
-    df["time"] = df["date_str"].apply(_parse_date)
-    return df
+    out["ra_deg"]  = coords.ra.deg
+    out["dec_deg"] = coords.dec.deg
+    out["time"]    = df["date_str"].apply(_parse_date)
+    return out
 
 def parse_itf_numeric(path, batch_size=500000, keep=None): #path has the caller tell us which file to read. both batch size and keep have defaults, so they're not required. 
     """This function will impliment batch parsing, or chunk parsing, by parsing the entire ITF in batches, converting to numbers, and returning one table."""
@@ -159,3 +160,41 @@ def parse_itf_to_parts(path, out_dir, batch_size=500_000, keep=None):
                 df = df[keep]
             df.to_parquet(f"{out_dir}/part_{part:03d}.parquet")
         return total
+
+def ra_to_degrees(ra_text): #starts a function, ra_text is whatever the function gets "handed"
+    parts = ra_text.split() #.split() chops text wherever there are spaces, and gives bac a list. Ex. "12 34 56.78" --> ["12", "34", "56.78"]
+    hours = float(parts[0]) #parts[0] is the first item in parts. float() turns this text into a decimal number. Hours is now equal to 12, not "12"
+    minutes = float(parts[1])
+    seconds = float(parts[2])
+    total_hours = hours + minutes / 60 + seconds / 3600 #60 minutes in an hour, 3600 seconds in an hour. This puts everything into a decimal number of hours
+    return total_hours * 15 #returns the final value back as degrees.
+
+def dec_to_degrees(dec_text):
+    text = dec_text.strip() #.strip() removes black space from both ends. This matters because fixed-length files (like the itf file) are "padded" with spaces
+    if text.startswith("-"): #the purpose of this if else statement is to check if there is a minus at the front. If there is, then we can multiply it by this at the end, and everything will work out.
+        sign = -1
+    else: 
+        sign = 1
+
+    text = text.lstrip("+-") #.lstrip("") removes the listed characters only from the left end. This takes away the sign from the text, "protecting" the arithmatic
+    parts = text.split()
+
+    degrees = float(parts[0])
+    arcmin = float(parts[1])
+    arcsec = float(parts[2])
+
+    total = degrees + arcmin / 60 + arcsec / 3600 #an arcminute is 1/60 of a degree, an arcsecond is 1/3600
+    return sign * total #the sign goes on last, so we just apply it to everything here.
+
+from astropy.time import Time
+def date_to_mjd(date_text):
+    parts = date_text.split()
+    year = int(parts[0]) #we use int here instead of float, because it makes a whole number. This is because years and months are always whole.
+    month = int(parts[1])
+    day_with_fraction = float(parts[2])
+
+    day_whole = int(day_with_fraction) #cutting a decimal into a whole number throws away everything after the decimal point. Ex. 3.141592653 --> 3
+    day_fraction = day_with_fraction - day_whole #isolates just the time of day part
+
+    midnight = Time(f"{year:04d}-{month:02d}-{day_whole:02d}", format="iso", scale="utc") #builds text like "2026-05-08". the ":02" pads with a zero up to two digits, so 5 --> 05, what the tool expects. Scale = "utc" says which clock I mean. This means universial coordinated time.
+    return midnight.mjd + day_fraction # .mjd gives the day count at midnight, adding the fraction moves me to the exact moment. Ex. date_to_mjd("2025 05 08.34567") should give 60803.34567

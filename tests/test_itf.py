@@ -1,5 +1,6 @@
 import sys; sys.path.append(".") #lets python find the src folder
-from src.ingest.itf import parse_line #imports the function under test
+from src.ingest.itf import parse_line, ra_to_degrees, dec_to_degrees, date_to_mjd #imports the function under test
+
 
 #the below are my text fixtures, inputs that I already know the corret outcome of
 GOOD = "     /7239   4C2015 05 23.30928 11 55 25.17 -01 46 36.9          23.7 z1     T09"
@@ -19,3 +20,15 @@ print("all tests pass") #only passes if every assert "held", ensures the parser 
 
 CONT = "0002IK19Q040  s2019 09 13.5327581 +   10.2502 + 5112.0801 + 4988.3508   ~01XrC53"
 assert parse_line(CONT) is None, "continuation line was not rejected."
+
+#for testing my string to numerical functions
+def test_ra_conversion():
+    assert abs(ra_to_degrees()("12 34 56.78") - 188.73658) < 0.0001
+def test_dec_sign():
+    assert dec_to_degrees("-00 30 00.0") == -0.5
+def test_dec_positive():
+    assert abs(dec_to_degrees("+41 16 09.0") - 41.269167) < 0.0001 #you should never compare decimals with ==, abs() instead gives the size of the gap, ignoring sign
+def test_mjd():
+    assert abs(date_to_mjd("2025 05 08.34567") - 60803.34567) < 0.00001
+
+print("all string --> numerical tests pass")
