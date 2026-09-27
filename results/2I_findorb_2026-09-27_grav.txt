@@ -1,0 +1,24 @@
+Orbital elements:  2I/Borisov = C/2019 Q4
+   Perihelion 2019 Dec 8.55285 +/- 2.45e-5 TT = 13:16:06 (JD 2458826.05285)
+Epoch 2020 Jan  5.0 TT = JDT 2458853.5                           Find_Orb
+q   2.00656913 +/- 2.17e-6          (J2000)
+M(N) 10.9  K 10.0                   Peri.  209.12383 +/- 0.000007
+z  -1.1744863115 +/- 7.49e-6        Node   308.14811 +/- 0.000026
+e   3.3566879 +/- 1.75e-5           Incl.   44.05244 +/- 0.000016
+2490 of 3349 observations 2019 Aug. 30-2020 Sept. 9; mean residual 0".61
+# State vector (heliocentric equatorial J2000):
+#   -1.746469383703  +0.799437761061  -0.842109516627 AU
+#   -3.266376642624 -12.732668903695 -21.376322257186 mAU/day
+# MOIDs: Me  1.695368 Ve  1.354538 Ea  1.092677 Ma  0.521615
+# MOIDs: Ju  2.378023 Sa  5.353568 Ur 10.603926 Ne 16.540546
+# 3 oppositions
+# Elements written: 27 Sep 2026 17:43:45 (JD 2461311.238718)
+# Full range of obs: 2019 Feb. 24-2020 Sept. 30 (3349 observations)
+# Find_Orb ver: 2026 Sep 21
+# Perturbers: 000000fc ;  JPL DE-440
+# Score: 2.287626
+#  $Name=2I/Borisov%20=%20C/2019%20Q4  $Ty=2019  $Tm=12  $Td=08.552854  $MA=34.43287
+#  $ecc=3.3566880  $Eqnx=2000.
+#  $a=-0.8514361  $Peri=209.12383  $Node=308.14811  $Incl=44.05244
+#  $EpJD=2458853.500  $q=2.006569  $T=2458826.052854  $H=10.9
+# Sigmas avail: 1
