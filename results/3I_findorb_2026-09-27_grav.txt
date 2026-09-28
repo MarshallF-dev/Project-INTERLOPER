@@ -1,0 +1,30 @@
+Input File Used: 3I_sub_to_2026-02-19.txt
+Observations contained: this file contained 806 individual observations.
+
+Results:
+1: 3I = C/2025 N1 (ATLAS); q=1.357, e=6.142, i=175 MOID 0.365  741 /  806 obs; 2025 May 31-2026 Feb. 19
+Process 0 is done
+Orbital elements:  3I = C/2025 N1 (ATLAS)
+   Perihelion 2025 Oct 29.49497 +/- 1.83e-5 TT = 11:52:45 (JD 2460977.99497)
+Epoch 2026 Feb 19.0 TT = JDT 2461090.5   Earth MOID: 0.3650   Ju: 0.2464
+q   1.35656183 +/- 5.78e-7          Ma: 0.0180   Sa: 0.4072      Find_Orb
+M(N)  9.0  K 10.0                   Peri.  128.02300 +/- 0.00010
+z  -3.7901744237 +/- 4.76e-6        Node   322.16797 +/- 0.00010
+e   6.1416059 +/- 8.45e-6           Incl.  175.11579 +/- 0.000011
+741 of 806 observations 2025 May 31-2026 Feb. 19; mean residual 0".53
+# State vector (heliocentric equatorial J2000):
+#   -1.878454200365  +3.556807687923  +1.369253501491 AU
+#   -3.392482791443 +33.242539336768 +12.011155013749 mAU/day
+# MOIDs: Me  0.940469 Ve  0.635674 Ea  0.364963 Ma  0.018021
+# MOIDs: Ju  0.246434 Sa  0.407190 Ur  1.066218 Ne  1.011800
+# 2 oppositions
+# Elements written: 27 Sep 2026 17:00:15 (JD 2461311.208510)
+# Full range of obs: 2025 May 31-2026 Feb. 19 (806 observations)
+# Find_Orb ver: 2026 Sep 21
+# Perturbers: 000000fc ;  JPL DE-440
+# Score: 3.560376
+#  $Name=3I%20=%20C/2025%20N1%20(ATLAS)  $Ty=2025  $Tm=10  $Td=29.494969  $MA=98.21005
+#  $ecc=6.1416060  $Eqnx=2000.
+#  $a=-0.2638401  $Peri=128.02300  $Node=322.16797  $Incl=175.11579
+#  $EpJD=2461090.500  $q=1.356562  $T=2460977.994969  $H=9.0
+# Sigmas avail: 1
