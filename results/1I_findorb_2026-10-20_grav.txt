@@ -1,0 +1,26 @@
+Orbital elements:  1I/`Oumuamua = A/2017 U1
+   Perihelion 2017 Sep 9.50271 +/- 5.37e-5 TT = 12:03:54 (JD 2458006.00271)
+Epoch 2017 Nov 23.0 TT = JDT 2458080.5   Earth MOID: 0.0959   Me: 0.0425
+q   0.25583374 +/- 7.87e-7          Ma: 0.0578                   Find_Orb
+M(N) 21.9  K 10.0                   Peri.  241.79417 +/- 0.00016
+z  -0.7851725858 +/- 8.21e-6        Node    24.59718 +/- 0.000007
+e   1.2008736 +/- 2.69e-6           Incl.  122.73415 +/- 0.00008
+195 of 214 observations 2017 Oct. 19-2018 Jan. 2; mean residual 0".53
+# State vector (heliocentric equatorial J2000):
+#   +1.888995324255  +0.522316555710  +0.508788926116 AU
+#  +21.060325380402  +0.354205188730  +8.997844213875 mAU/day
+# MOIDs: Me  0.042483 Ve  0.143101 Ea  0.095907 Ma  0.057821
+# MOIDs: Ju  1.452184 Sa  3.462985 Ur  7.516549 Ne 11.898955
+# 1 oppositions
+# Elements written: 20 Oct 2026  5:19:59 (JD 2461333.722219)
+# Full range of obs: 2017 Oct. 14-2018 Jan. 2 (214 observations)
+# Find_Orb ver: 2026 Sep 21
+# Perturbers: 00000468 ;  JPL DE-440
+# Earth encounter velocity 64.3197 km/s
+# Barbee-style encounter velocity: 50.6810 km/s
+# Score: 1.237528
+#  $Name=1I/`Oumuamua%20=%20A/2017%20U1  $Ty=2017  $Tm=09  $Td=09.502707  $MA=51.08487
+#  $ecc=1.2008736  $Eqnx=2000.
+#  $a=-1.2736053  $Peri=241.79417  $Node=24.59719  $Incl=122.73416
+#  $EpJD=2458080.500  $q=0.255834  $T=2458006.002708  $H=21.9
+# Sigmas avail: 1
