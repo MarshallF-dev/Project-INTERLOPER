@@ -3,5 +3,8 @@ pandas
 matplotlib
 jupyter
 ipykernel
-datetime
 pyarrow
+numpy==2.5.3
+scipy==1.18.1
+tqdm==4.70.1
+scikit-learn==1.9.1
