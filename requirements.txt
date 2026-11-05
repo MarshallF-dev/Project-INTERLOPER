@@ -8,3 +8,6 @@ numpy==2.5.3
 scipy==1.18.1
 tqdm==4.70.1
 scikit-learn==1.9.1
+rebound==4.6.0
+assist==1.2.3
+astroquery==0.4.11
